@@ -1,0 +1,213 @@
+:root{
+    /*Colors*/
+    --Main_green:#8cc63f;
+    --Grey:#212226;
+    --White_Smoke:#f4f4f4;
+    --White:#fff;
+    --Black:#000;
+    --Grey2:#f4f4f4;
+    --skyblue:#00bfff;
+    /*Borders*/
+    --border_white:1px solid #fff;
+    --border_yellow:1px solid #f4c613;
+    /*Tiempo*/
+    --t:all 0.5s ease-in;
+    /*Bordes*/
+    --Border_w:2px solid #fff;
+    --border_w:1px solid #fff;
+    /*Var Social Network = sn_Iniciales_de_la_red*/
+    --sn_fa:#3A5795;
+    --sn_tw:#5EA9DD;
+    --sn_wd:#06c;
+    --sn_rd:#D70004;
+    --sn_lk:#0274B3;
+    --sn_cg:#00A478;   
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: var(--White);
+    overflow: hidden;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+/*Header*/
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.smooth-scroll{
+    color: var(--White);
+    transition: all 0.8s ease;
+}
+
+.smooth-scroll:hover{
+    color: var(--Main_green);
+}
+/*End Header*/
+
+/*Home*/
+.home {
+    background: none;
+    height: 100%;
+}
+.home-bg-video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x:hidden;
+    z-index: -1;
+    background: url("../video/solo.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-content{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-heading h1 {
+    color: var(--White);
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.home-heading h1 span {
+    color: var(--Main_green);
+    font-weight: 500;
+}
+
+.home-text p {
+    color: var(--White);
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+.btn_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn1
+{
+    padding: 13px 18px;
+    color: var(--Main_green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: var(--Border_w);
+    border-top-left-radius: 15px;
+    transition: var(--t);
+    margin-right: -6px;
+    
+}
+
+
+
+.btn1:hover
+{
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--skyblue);    
+}
+
+
+.btn2
+{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: var(--Main_green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: var(--Border_w);
+    border-bottom-right-radius: 15px;
+    transition: var(--t);
+    margin-right:10px;
+}
+
+
+
+.btn2:hover
+{
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Main_green);  
+}
+
+/*Arrow Down*/
+#arrow-down {
+   color:var(--White);
+   font-size: 32px;
+   width: 32px;
+   height: 32px;
+   text-decoration: none;
+   transition: all 0.5s ease-in-out;
+   position: absolute;
+   left: 50%;
+   bottom: 20px;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: var(--Main_green);
+}
+
+.fa-angle-down{
+    display: flex;
+    justify-content: center;
+}
+/*End Arrow Down*/
+
+/*End Home*/
+
+
