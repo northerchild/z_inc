@@ -57,9 +57,14 @@ section {
 .logo{
     width: 100px;
     height: 100px;
+    animation: moveInDown 1s ease-out;
 }
 
 /*Header*/
+
+.nav{
+     animation: moveInDown 1s ease-out;
+}
 
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
@@ -117,6 +122,7 @@ section {
     text-transform: uppercase;
     margin: 0;
     text-align: center;
+    animation: moveInLeft 1s ease-out;
 }
 
 .home-heading h1 span {
@@ -129,6 +135,7 @@ section {
     font-size: 17px;
     font-weight: 100;
     margin: 8px 0 30px 0;
+    animation: moveInRight 1s ease-out;
 }
 
 .btn_container{
@@ -148,7 +155,8 @@ section {
     border-top-left-radius: 15px;
     transition: var(--t);
     margin-right: -6px;
-    
+    animation: moveInDown .8s ease-out .75s;
+    animation-fill-mode: backwards; 
 }
 
 
@@ -173,6 +181,8 @@ section {
     border-bottom-right-radius: 15px;
     transition: var(--t);
     margin-right:10px;
+    animation: moveInUp .8s ease-out .75s;
+    animation-fill-mode: backwards; 
 }
 
 
@@ -205,9 +215,63 @@ section {
 .fa-angle-down{
     display: flex;
     justify-content: center;
+    animation: ArrowDown 1.5s ease-out infinite;
+
 }
 /*End Arrow Down*/
 
 /*End Home*/
 
 
+/*Animations*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-100px); }
+  80% {
+    transform: translatey(20px); }
+  100% {
+    opacity: 1;
+    transform: translatey(0); } }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translatey(100px); }
+  80% {
+    transform: translatey(-20px); }
+  100% {
+    opacity: 1;
+    transform: translatey(0); } }
+
+@keyframes ArrowDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-35px); }
+  80% {
+    transform: translatey(20px); }
+  100% {
+    opacity: 1;
+    transform: translatey(0); 
+    color: var(--Main_green);
+    } }
