@@ -222,6 +222,54 @@ section {
 
 /*End Home*/
 
+/*About 01*/
+.content-box-lg{
+    padding: 100px 0;
+}
+
+.vertical-heading h5{
+    color: var(--Main_green);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -53px;
+}
+
+.about_contact:link,
+.about_contact:visited{
+    color: var(--Main_green)
+}
+
+.about_contact:hover{
+    text-decoration: none;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 3em;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/*End About 01*/
+
 
 /*Animations*/
 @keyframes moveInLeft {
