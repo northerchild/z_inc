@@ -60,6 +60,10 @@ section {
     animation: moveInDown 1s ease-out;
 }
 
+.center-text{
+    text-align: center;
+    margin-bottom: 4rem;
+}
 /*Header*/
 
 .nav{
@@ -195,7 +199,7 @@ section {
 }
 
 /*Arrow Down*/
-#arrow-down {
+.arrow-down {
    color:var(--White);
    font-size: 32px;
    width: 32px;
@@ -207,8 +211,8 @@ section {
    bottom: 20px;
 }
 
-#arrow-down:hover,
-#arrow-down:focus {
+.arrow-down:hover,
+.arrow-down:focus {
     color: var(--Main_green);
 }
 
@@ -222,7 +226,7 @@ section {
 
 /*End Home*/
 
-/*About 01*/
+/*About */
 .content-box-lg{
     padding: 100px 0;
 }
@@ -268,8 +272,112 @@ section {
     margin: 0 auto;
 }
 
-/*End About 01*/
+/*End About */
 
+/*What we do */
+.img_small{
+    width: 300px;
+    height: 200px;
+}
+
+.container_do{
+    display: flex;
+    justify-content:space-around;
+}
+
+.sub_container_do_1{
+    margin-left: -9em;
+    width: 50%;
+}
+
+.heading-h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2em;
+  transition: all .4s ease-out; 
+}
+
+.heading-h2:hover {
+    transform: skewY(2deg) skewx(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); 
+}
+
+.heading-h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+
+.paragraph {
+  font-size: 1.4rem; 
+}
+.paragraph:not(:last-child) {
+    margin-bottom: 3rem; 
+}
+
+
+.btn-more:link, .btn-more:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2s; 
+}
+
+.btn-more:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); 
+}
+
+.btn-more:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); 
+}
+
+.sub_container_do_2{
+    margin-right: 14rem;
+}
+
+.composition {
+  position: relative; 
+}
+
+  .composition__photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    boder-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .3s ease;
+    outline-offset: 2rem; 
+}
+ .composition__photo--p1 {
+      left: -4.5em;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: -10rem;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+    .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+/*End What we do */
 
 /*Animations*/
 @keyframes moveInLeft {
