@@ -360,24 +360,97 @@ section {
     transition: all .3s ease;
     outline-offset: 2rem; 
 }
- .composition__photo--p1 {
+.composition__photo--p1 {
       left: -4.5em;
-      top: -2rem; }
-    .composition__photo--p2 {
+      top: -2rem; 
+  }
+.composition__photo--p2 {
       right: 0;
-      top: 2rem; }
-    .composition__photo--p3 {
+      top: 2rem; 
+  }
+.composition__photo--p3 {
       left: -10rem;
-      top: 10rem; }
-    .composition__photo:hover {
+      top: 10rem;
+       }
+.composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
-    .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); 
+}
 
 /*End What we do */
+
+/*Mision*/
+.mision {
+    background-color: var(--Gray);
+}
+
+.content-box-md{
+    padding: 100px 0;
+}
+
+.card-item {
+    background-color: var(--White);
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: all 0.5s ease;
+}
+
+.card-item i {
+    font-size: 3em;
+    margin: 0;
+}
+
+.card-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.card-item hr {
+    width: 100px;
+    height: 3px;
+    background-color: var(--skyblue);
+    margin: 0 auto;
+    border: none;
+}
+
+.card-item p {
+    margin-top: 20px;
+}
+
+
+/* Hover*/
+
+.card-item:hover {
+    background-color: var(--Main_green);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-item:hover i,
+.card-item:hover h3,
+.card-item:hover p {
+    color: var(--White);
+}
+
+
+.card-item:hover hr {
+    background-color: var(--White);
+}
+
+.card-item:hover i {
+    transform: translateY(-20px);
+}
+
+/* Card transition */
+.card-item i,h3,p{
+    transition: all 0.5s ease-in-out;
+}
+
+/*End Mision*/
 
 /*Animations*/
 @keyframes moveInLeft {
