@@ -452,6 +452,44 @@ section {
 
 /*End Mision*/
 
+/*Gallery*/
+.gallery_container{
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 3fr repeat(3,1fr);
+    grid-gap: .3rem;
+    grid-auto-flow: row dense;
+
+}
+
+.gallery-item{
+    filter: grayscale(100%);
+    transition: all .5s ease-out;
+}
+
+.gallery-item:hover{
+    filter: grayscale(10%);
+}
+
+.gallery-item:nth-child(5n) {
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(7n) {
+    grid-column: span 4;
+}
+
+
+.gallery-img {
+    display : block;
+    width :100%;
+    object-fit: cover;
+}
+
+/*End Gallery*/
 /*Animations*/
 @keyframes moveInLeft {
   0% {
