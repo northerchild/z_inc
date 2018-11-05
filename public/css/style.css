@@ -612,6 +612,29 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 
 /*End Blog*/
+/*Statement*/
+.statement {
+    background: url("../img/tech/tech-statement.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.statement .content-box-lg {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.tech-statement h3 {
+    color: var(--White);
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+.tech-statement p {
+    font-size: 2rem;
+    color: #f4c613;
+    font-family: "Raleway", sans-serif;
+    margin-top: 8px;
+}
+/*End Statement*/
 
 /*Animations*/
 @keyframes moveInLeft {
