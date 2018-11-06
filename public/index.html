@@ -555,7 +555,7 @@
                         <!-- Contact Right -->
                         <div class="contact-right">
 
-                            <form>
+                            <form name="Form" id="form">
                                 <h4>Send Message</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repell.</p>
 
@@ -563,28 +563,28 @@
 
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" >
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                            <input type="email" class="form-control" id="email" placeholder="Email Address" pattern="[/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/]" >
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="phone" placeholder="Phone No.">
+                                            <input type="text" class="form-control" id="phone" placeholder="Phone No."  >
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" > 
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                    <textarea class="form-control" id="message" placeholder="Message" pattern="[a-z]{1,30}(,[a-z]{1,30})*" ></textarea>
                                     <div class="check-center">
                                         <label><input type="checkbox">I'm a fan of receiving cool stuff in my inbox n_n</label>
                                         <label><input type="checkbox">I want to learn more about the UX improvement Strategy Assessment</label>
@@ -593,7 +593,7 @@
                                 </div>
 
                                 <div class="btn-container">
-                                    <a class="btn-submit btn--white" href="#" title="Submit" role="button">Send</a>
+                                    <input class="btn-submit " type="submit" value="Send">
                                 </div>
 
                             </form>
@@ -661,6 +661,8 @@
     <!-- WOW JS -->
     <script src="js/wow/wow.min.js"></script>
 
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
