@@ -3,7 +3,7 @@ const app = express()
 const hbs = require('hbs');
 require('./hbs/helpers');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'))
 //Express HBS engine
@@ -16,12 +16,14 @@ app.get('/',(req, res)=> {
 	});
 });
 
+/*
 if (!port) {
 	console.error("No se definio bien el puerto")
 }else{
 	console.log(`Escuchando desde el puerto ${port}`)	
 }
+*/
 
-app.listen(3000,()=>{
-
+app.listen(port,()=>{
+	console.log(`Escuchando peticiones en el puerto ${port}`)
 });
